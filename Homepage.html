@@ -14,6 +14,76 @@
             text-align: center;
             background-color: #cdbfd8;
         }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        #walletSection {
+            margin-top: 70px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #word {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #wallet {
+            font-size: 20px;
+            width: 30%;
+            margin-left: 35%;
+            border: 2px black solid;
+            border-radius: 5px;
+            background-color: #cda9e9;
+            padding: 20px 27px 12px 20px;
+        }
+
+        #name {
+            text-align: left;
+        }
+
+        #account {
+            display: flex;
+            margin-left: 70%;
+            text-align: right;
+        }
+
+        #balance {
+            display: flex;
+            margin-left: 80%;
+            text-align: right;
+        }
+
+        #align {
+            font-size: 24px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            float: left;
+            width: 15%;
+            height: 150px;
+            text-align: center;
+            border: 2px black solid;
+            border-radius: 4px;
+            padding-top: 37px;
+            cursor: pointer;
+        }
+
+        #align2 {
+            margin-top: 100px;
+            margin-left: 20%;
+        }
+
+        #purple1 {
+            background-color: #c19cde;
+        }
+
+        #purple2 {
+            background-color: #c5aad9;
+        }
+
+        footer {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -21,6 +91,61 @@
     <header>
         <h1>Homepage!</h1>
     </header>
+
+    <section id="walletSection">
+        <p id="word">Wallet</p>
+        <div id="wallet">
+            <p id="name">Chan Zhi Ting</p>
+            <br>
+            <p id="account">Account: 22027019</p>
+            
+            <p id="balance">Balance: SGD 475</p>
+        </div>
+    </section>
+
+    <section id="align2">
+        <div id="align" style="background-color: #a878cd;" onclick="lt()">
+            Local Transfer
+        </div>
+
+        <div id="align" style="background-color: #cab5db;" onclick="it()">
+            International Transfer
+        </div>
+
+        <div id="align" style="background-color: #a878cd;" onclick="th()">
+            Transaction History
+        </div>
+
+        <div id="align" style="background-color: #cab5db;" onclick="tu()">
+            Top Up
+        </div>
+
+        <div id="align" style="background-color: #a878cd;" onclick="au()">
+            About Us
+        </div>
+    </section>
+
+    <script>
+        function lt() {
+            window.location.href = "LocalTransfer.html";
+        }
+
+        function it() {
+            window.location.href = "InternationalTransfer.html";
+        }
+
+        function th() {
+            window.location.href = "TransactionHistory.html";
+        }
+
+        function tu() {
+            window.location.href = "TopUp.html";
+        }
+
+        function au() {
+            window.location.href = "AboutUs.html";
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
