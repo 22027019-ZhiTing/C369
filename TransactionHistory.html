@@ -27,52 +27,40 @@
             padding: 40px;
         }
 
-        h2 {
-            font-size: 24px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        #date {
-            margin-top: 27px;
-            margin-left: 25%;
-        }
-
-        .box {
-            width: 50%;
-            height: 100px;
+        .local {
+            width: 27%;
+            height: 200px;
             background-color: white;
             border-color: silver;
             border-style: solid;
             border-radius: 5px;
             position: relative;
-            margin-left: 25%;
+            margin-left: 36.5%;
+            padding: 12px
         }
 
-        h3 {
-            font-size: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            padding-top: 5px;
-            padding-left: 7px;
-            word-break: break-all;
+        .international {
+            width: 27%;
+            height: 250px;
+            background-color: white;
+            border-color: silver;
+            border-style: solid;
+            border-radius: 5px;
+            position: relative;
+            margin-left: 36.5%;
+            padding: 12px
         }
 
-        #amount {
-            text-align: right;
-            padding-right: 7px;
-            display: block;
+        #green {
+            color: rgb(50, 170, 50);
         }
 
-        h4 {
-            font-size: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            display: inline-block;
+        #orange {
+            color: orange;
         }
 
-        h5 {
-            color: gray;
-            font-size: 15px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            display: inline-block;
+        #red {
+            color: red;
         }
     </style>
 </head>
@@ -87,75 +75,61 @@
     </header>
 
     <section>
-        <h2 id="date">(date)</h2>
-
-        <div>
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
+        <div class="international">
+            <p>International Transfer</p>
+            <p>Date and Time : 17/8/2023, 4:57pm</p>
+            <p>From : Mobile Number - 88998899</p>
+            <p>To : Account Number - 111-000-2</p>
+            <p>Amount : SGD 5</p>
+            <p>Status : <span id="orange">In Progress</span></p>
         </div>
 
-        <h2 id="date">(date)</h2>
+        <div class="local">
+            <p>Local Transfer</p>
+            <p>Date and Time : 12/8/2023, 2:20pm</p>
+            <p>To : Account Number - 222-333-1</p>
+            <p>Amount : SGD 5</p>
+            <p>Status : <span id="green">Successful</span></p>
+        </div>
 
-        <div>
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
+        <div class="local">
+            <p>Local Transfer</p>
+            <p>Date and Time : 7/8/2023, 2:14pm</p>
+            <p>From : Mobile Number - 99998888</p>
+            <p>Amount : SGD 5</p>
+            <p>Status : <span id="green">Successful</span></p>
+        </div>
 
-            <div class="box">
-                <h3>(Transaction Name)</h3>
-                <br>
-                <div id="amount">
-                    <h5>SGD</h5>
-                    <h4>(+/- amount)</h4>
-                </div>
-            </div>
+        <div class="local">
+            <p>Local Transfer</p>
+            <p>Date and Time : 7/8/2023, 2:14pm</p>
+            <p>From : Identification Number - T0123456A</p>
+            <p>Amount : SGD 5</p>
+            <p>Status : <span id="green">Successful</span></p>
+        </div>
+
+        <div class="local">
+            <p>Local Transfer</p>
+            <p>Date and Time : 7/8/2023, 2:12pm</p>
+            <p>From : Identification Number - T0123456A</p>
+            <p>Amount : SGD 5</p>
+            <p>Status : <span id="red">Failed</span></p>
+        </div>
+
+        <div class="local">
+            <p>(local/international)</p>
+            <p>(date and time)</p>
+            <p>(to/from)</p>
+            <p>(amount)</p>
+            <p>(transaction status)</p>
+        </div>
+
+        <div class="local">
+            <p>(local/international)</p>
+            <p>(date and time)</p>
+            <p>(to/from)</p>
+            <p>(amount)</p>
+            <p>(transaction status)</p>
         </div>
     </section>
 

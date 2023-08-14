@@ -39,6 +39,15 @@
             border-radius: 4px;
         }
 
+        input[type=password] {
+            width: 100%;
+            padding: 12px 27px;
+            margin: 0px 0px 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
         input[type=submit] {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             width: 100%;
@@ -59,20 +68,27 @@
 
 <body>
     <nav>
-        <a href="LocalTransfer.html">Back</a>
+        <a href="Homepage.html">Back</a>
     </nav>
 
     <header>
-        <h1>Transfer to Mobile</h1>
+        <h1>International Transfer</h1>
     </header>
 
     <section>
-        <form action="TransactionSuccessful.html" onsubmit="successful()">
+        <form action="TransactionHistory.html" onsubmit="successful()">
             <p>Transfer to: </p>
-            <input type="text" id="rm" placeholder="Recipient's mobile" required>
+            <input type="text" id="rm" placeholder="Recipient's mobile number" required>
+            <input type="text" id="ra" placeholder="Recipient's account number" required>
 
             <p>Amount</p>
             <input type="text" id="ta" placeholder="Amount" required>
+
+            <p>Message</p>
+            <input type="text" id="msg" placeholder="optional">
+
+            <p>Pin</p>
+            <input type="password" id="pin" placeholder="Please enter your pin" required>
 
             <input type="submit" value="Submit">
         </form>
@@ -80,9 +96,7 @@
 
     <script>
         function successful() {
-            var mobile = document.getElementById("rm").value;
-            var amount = document.getElementById("ta").value;
-            var message = "Your transaction of SGD" + amount + " to a recipient of mobile number " + mobile + " was successful!";
+            var message = "This transaction has been processed and is currently in progress. Please refer to the transaction history page to check its status.";
 
             alert(message);
         }

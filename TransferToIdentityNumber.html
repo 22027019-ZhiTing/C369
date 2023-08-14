@@ -3,7 +3,7 @@
 
 <head>
     <title>ZT Bank-
-        Transfer to Identity Number</title>
+        Transfer to Identification Number</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,13 +63,13 @@
     </nav>
 
     <header>
-        <h1>Transfer to Identity Number</h1>
+        <h1>Transfer to Identification Number</h1>
     </header>
 
     <section>
         <form action="TransactionSuccessful.html" onsubmit="successful()">
             <p>Transfer to: </p>
-            <input type="text" id="rin" placeholder="Recipient's identity number" required>
+            <input type="text" id="rin" placeholder="Recipient's identification number" required>
 
             <p>Amount</p>
             <input type="text" id="ta" placeholder="Amount" required>
@@ -80,9 +80,9 @@
 
     <script>
         function successful() {
-            var identityNumber = document.getElementById("rin").value;
+            var identificationNumber = document.getElementById("rin").value;
             var amount = document.getElementById("ta").value;
-            var message = "Your transaction of SGD" + amount + " to a recipient of identity number " + identityNumber + " was successful!";
+            var message = "Your transaction of SGD" + amount + " to a recipient of identification number " + identificationNumber + " was successful!";
 
             alert(message);
         }
